@@ -167,7 +167,7 @@ namespace Practica_Semana11SMIS047221
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(600, 186);
+            this.btnCancel.Location = new System.Drawing.Point(608, 186);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(87, 52);
             this.btnCancel.TabIndex = 10;
@@ -191,7 +191,7 @@ namespace Practica_Semana11SMIS047221
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(477, 186);
+            this.btnNuevo.Location = new System.Drawing.Point(515, 186);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(87, 52);
             this.btnNuevo.TabIndex = 12;

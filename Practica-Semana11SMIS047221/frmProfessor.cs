@@ -106,6 +106,12 @@ namespace Practica_Semana11SMIS047221
             txtPID.ReadOnly = true;
             lblPID.Visible = true;
 
+            //llenar los textboxs con los values del dtagridview
+            txtPID.Text = dtgProfessor.CurrentRow.Cells[0].Value.ToString();
+            txtNombre.Text= dtgProfessor.CurrentRow.Cells[1].Value.ToString();
+            txtTitulo.Text = dtgProfessor.CurrentRow.Cells[2].Value.ToString();
+            txtGrupo.Text= dtgProfessor.CurrentRow.Cells[3].Value.ToString();
+
             //cargar datos en controles
         }
         private void btnSave_Click_1(object sender, EventArgs e)
@@ -167,6 +173,8 @@ namespace Practica_Semana11SMIS047221
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //enviar aaccion
+            action = "edit";
             controlsEnable();
 
             txtPID.Visible = true;
@@ -179,8 +187,7 @@ namespace Practica_Semana11SMIS047221
             txtTitulo.Text = dtgProfessor.CurrentRow.Cells[2].Value.ToString();
             txtGrupo.Text = dtgProfessor.CurrentRow.Cells[3].Value.ToString();
            
-            //enviar aaccion
-            action = "edit";
+          
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -231,5 +238,9 @@ namespace Practica_Semana11SMIS047221
             action = "new";
         }
 
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            fillDataGridView();
+        }
     }
 }

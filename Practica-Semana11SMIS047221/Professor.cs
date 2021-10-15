@@ -39,12 +39,9 @@ namespace Practica_Semana11SMIS047221
             }
             else if (action == "edit")
             {
-                string query = "UPDATE professor SET"
-                    + "nombredelprofesor='" + _NombredelProfesor + "' ,"
-                    + "titulodelprofesor='" + _TitulodelProfesor + "' ,"
-                    + "grupodelprofesor='" + _GrupodelProfesor + "'"
-                    + "WHERE "
-                    + "PID='" + _PID + "'";
+                //tenia algun simbolo demas
+
+                string query = "UPDATE professor SET nombredelprofesor='" + _NombredelProfesor + "', titulodelprofesor='" + _TitulodelProfesor + "', grupodelprofesor='" + _GrupodelProfesor + "' WHERE PID='" + _PID + "'";
                 crud.executeQuery(query);
                 return true;
             }
